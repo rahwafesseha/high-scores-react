@@ -21,6 +21,8 @@
 .scores-of-countries{
    border:8px solid rgb(38, 223, 14);
    margin:15px;
+   border-radius: 10%;
+   box-shadow: -5px 6px 1px 5px ;
  
    
 }
@@ -31,17 +33,20 @@ h1{
   margin:20px;
   text-align: center;
   color:green;
+ 
 }
   .cards{
   display:grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(2,1fr);
+   
 }
 .city{
   border:5px solid rgb(192, 24, 24);
   }
   .name{
     border-bottom: 1px solid black;
+    font-size: 15px;
   }
 .App-header {
   background-color: #282c34;

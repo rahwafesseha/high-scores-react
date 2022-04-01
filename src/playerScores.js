@@ -4,7 +4,7 @@ const PlayerScores = (props) => {
       <div className="Wrapper">
         <h1>High Scores Per Country</h1>
         <div className="cards">
-          {props.scores.map((city) => {
+          {props.scores.sort((a, b) => a.name.localeCompare(b.name)).map((city) => {
             return (
               <div className="scores-of-countries">
                 <h2 className="city">High Scores:{city.name}</h2>
